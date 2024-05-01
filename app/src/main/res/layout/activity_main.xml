@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Student Form"
+            android:textColor="@color/black"
+            android:background="@color/hijau"
+            android:fontFamily="@font/poppins"
+            android:textSize="20sp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIK"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppins"/>
+
+        <EditText
+            android:id="@+id/nik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:hint="NIK (Number Only, Max 16)"
+            android:inputType="number"
+            android:maxLength="16"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            android:layout_gravity="left"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"/>
+
+        <EditText
+            android:id="@+id/nama_lengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppins"/>
+
+        <EditText
+            android:id="@+id/tanggal_lahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_margin="10dp"
+            android:layout_below="@id/alamat"
+            android:hint="Pilih Tanggal Lahir"
+            android:inputType="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tempat Lahir"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppins"/>
+
+        <EditText
+            android:id="@+id/tempat_lahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tempat Lahir"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppins"/>
+
+        <EditText
+            android:id="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat"
+            android:lines="2"
+            android:minLines="2"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="Usia"
+            android:fontFamily="@font/poppins"/>
+
+        <EditText
+            android:id="@+id/usia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="XX Tahun"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/poppins"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppins"/>
+
+        <Spinner
+            android:id="@+id/jenis_kelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kewarganegaraan"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppins"/>
+
+        <RadioGroup
+            android:id="@+id/kewarganegaraan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <RadioButton
+                android:id="@+id/wni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WNI" />
+
+            <RadioButton
+                android:id="@+id/wna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WNA" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bidang Kompetensi"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppins"/>
+
+        <CheckBox
+            android:id="@+id/Development"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Development &amp; IT"
+            android:fontFamily="@font/poppins"
+            android:layout_marginHorizontal="10dp"/>
+
+        <CheckBox
+            android:id="@+id/AI_Services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AI Services"
+            android:layout_marginHorizontal="10dp"/>
+
+        <CheckBox
+            android:id="@+id/Design_Creative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Design Creative"
+            android:fontFamily="@font/poppins"
+            android:layout_marginHorizontal="10dp"/>
+
+        <CheckBox
+            android:id="@+id/Writing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Writing"
+            android:fontFamily="@font/poppins"
+            android:layout_marginHorizontal="10dp"/>
+
+        <CheckBox
+            android:id="@+id/Finance_and_Accounting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finance &amp; Accounting"
+            android:fontFamily="@font/poppins"
+            android:layout_marginHorizontal="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-Mail"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppins"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-Mail"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/reset_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reset"
+                android:fontFamily="@font/poppins"/>
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Submit"
+                android:fontFamily="@font/poppins"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SecondActivity"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="NIK" />
+
+            <TextView
+                android:id="@+id/nik"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Nama Lengkap" />
+
+            <TextView
+                android:id="@+id/nama_lengkap"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Tanggal Lahir" />
+
+            <TextView
+                android:id="@+id/tanggal_lahir"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Tempat Lahir" />
+
+            <TextView
+                android:id="@+id/tempat_lahir"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Alamat" />
+
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Usia" />
+
+            <TextView
+                android:id="@+id/usia"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Jenis Kelamin" />
+
+            <TextView
+                android:id="@+id/jenis_kelamin"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Kewarganegaraan" />
+
+            <TextView
+                android:id="@+id/kewarganegaraan"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Bidang Kompetensi" />
+
+            <TextView
+                android:id="@+id/BidangKompetensi"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Email" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kembali" />
+
+        </LinearLayout>
+
+    </TableLayout>
+
+</LinearLayout>
